@@ -26,6 +26,4 @@ for X in range(maxX):
         if(((pixelBrightness/255)>(random.random())*tresholdMult)):
             output.putpixel((X, Y), (255, 255, 255))
 
-output.show()
-
 output.save("out.jpg")
