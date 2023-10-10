@@ -10,7 +10,7 @@ inputImage = PIL.Image.open(input("Název vstupního souboru: "))
 
 sharpnessTreshold = float(input("Hranice ostrosti (0-999+) [Doporučení 25]: ")) 
 resFactor = float(input("Zmenšení rozlišení: (2 = 2x menší) [Doporučení 1]: "))
-tresholdMult = float(input("Světlost (1-1) [Doporučení 0.8]: "))
+tresholdMult = float(input("Světlost (0-1) [Doporučení 0.8]: "))
 
 enhancer = ImageEnhance.Sharpness(inputImage)
 inputImage = enhancer.enhance(sharpnessTreshold)
